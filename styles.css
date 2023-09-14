@@ -1,0 +1,109 @@
+https: //coolors.co/c0bcb5-296eb4-1789fc-5bb0b1-7ec48b-a0d865-e4ff1a-ff5714
+  @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  background-color: rgb(189, 248, 123);
+  margin: 0 auto;
+  width: 80vw;
+}
+
+header {
+  background-color: rgb(1, 39, 134);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: rgb(0, 71, 81);
+  background-color: rgb(38, 207, 0);
+  border-radius: 20px;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+header {
+  text-decoration: none;
+  color: #a2f648;
+  border-radius: 10px;
+  padding: 5px 8px;
+  text-align: center;
+}
+
+header nav a:hover {
+  color: rgb(182, 38, 38);
+  background-color: rgb(195, 211, 13);
+  text-decoration: underline;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px auto;
+  width: 80%;
+}
+
+footer {
+  background-color: rgb(1, 39, 134);
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  color: rgb(170, 255, 0);
+}
+
+@media (min-width: 600px) {
+  body {
+    background-color: #eef3e4;
+  }
+
+  header nav {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  main {
+    display: flex;
+    gap: 20px;
+    margin: 0 30px;
+  }
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 auto;
+}
+
+.send-button-container {
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  padding-bottom: 7px;
+}
+
+@media (min-width: 600px) {
+  from {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .send-button-container {
+    grid-column: span 2;
+  }
+}
